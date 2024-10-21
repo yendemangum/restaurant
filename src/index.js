@@ -10,6 +10,8 @@ import { content3 } from "./about.js"
 
 const content = document.querySelector("#content")
 
+const selectButton = document.querySelector(".dropdown")
+
 const homeButton = document.querySelector(".home")
 
 const menuButton = document.querySelector(".menu")
@@ -38,4 +40,12 @@ aboutButton.addEventListener("click", () => {
         content.removeChild(content.lastChild)
     } 
     content.appendChild(content3)
+})
+
+selectButton.addEventListener("click", () => {
+    homeButton.classList.toggle("visible")
+    menuButton.classList.toggle("visible")
+    aboutButton.classList.toggle("visible")
+    
+
 })

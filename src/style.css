@@ -53,3 +53,16 @@ button {
     border-radius: 12px;
     align-self: center;
 }
+
+.home, .menu, .about {
+    display: none;
+}
+
+button:hover {
+    opacity: .7;
+}
+
+.visible {
+    display: inline-block;
+}
+
